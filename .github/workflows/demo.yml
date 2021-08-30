@@ -7,8 +7,8 @@ on:
     branches:
       - main
 jobs:
-  window-build:
-    runs-on: window-latest
+  build:
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - name: Use Node.js 14.x
@@ -21,4 +21,4 @@ jobs:
       - name: build
         run: npm run build
       - name: Test
-        run:  npm test --project=myapp
+        run:  npm test
