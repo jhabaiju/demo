@@ -7,7 +7,7 @@ on:
     branches:
       - main
 jobs:
-  window-build:
+  build:
     runs-on: window-latest
     steps:
       - uses: actions/checkout@v2
